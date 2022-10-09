@@ -1,0 +1,141 @@
+/* Default Css */
+a{
+    display: inline-block;
+}
+img{
+    max-width: 100%;
+}
+.bg-grey{
+    background: #f6f9fc ;
+}
+.text-primary{
+    color:#808080;
+}
+.text-secondary{
+    color:#bfa69c;
+}
+
+/* 
+/////Pricing Table /////////
+*/
+.price-table-content span {
+    text-transform: uppercase;
+    color: #5994f2;
+}
+.price-table-content h4 {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 2rem;
+    position: relative;
+}
+.price-table-content h4::after{
+    content:"";
+    position: absolute;
+    top: 140%;
+    left: 0;
+    right: 0;
+    margin:auto;
+    height:3px;
+    width: 70px;
+    background: #5994f2;
+
+}
+.price-table-content p {
+    width: 412px;
+    margin: auto;
+    font-weight: 500;
+    color:#808080;
+   
+}
+.price-item{
+    transition: 0.4s all;
+}
+.price-item:hover{
+    background: #2f65ed !important;
+}
+.price-item:hover *{
+    transition: 0.4s all;
+}
+.price-item:hover *, .price-item:hover .price-features li{
+    color:#fff;
+}
+.price-item a.btn, .banner-content a.btn{
+    transition: 0.4s all;
+    position: relative;
+    z-index: 5;
+    overflow: hidden;
+}
+.price-item:hover a.btn:hover{
+    color: #fff;
+}
+.banner-content a.btn:hover{
+    color:#fff;
+}
+.price-item a.btn::after, .banner-content a.btn::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 50rem;
+    z-index: -1;
+    background: #2f65ed !important;
+    transition: 0.4s all;
+}
+.price-item a.btn:hover:after, .banner-content a.btn:hover:after{
+    width: 100%;
+}
+.price-item:hover a.btn {
+    background: #fff;
+    color: #2f65ed;
+}
+.price-item h1 {
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 60px;
+}
+.price-item .price-features li {
+    color: #bebbbd;
+    margin: 12px 0;
+    transition: 0.4s all;
+}
+
+/* Banner Section */
+.banner{
+    background:linear-gradient(#345cd3d9, #345cd3d9), url(https://i.ibb.co/wYW89YQ/free-bg.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 100px 0;
+}
+.banner-content h4 {
+    width: 340px;
+    margin: auto;
+    position: relative;
+}
+.banner-content h4::after{
+    content:"";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    right: 0;
+    margin:auto;
+    height:2px;
+    width: 50px;
+    background: #fff;
+
+}
+.banner-content p {
+    width: 460px;
+    margin: auto;
+}
+.banner-content a.btn{
+    background: #fff;
+    color:#5994f2;
+    font-weight: 600;
+}
+.left p{
+    width: 280px;
+}
+.right h3{
+    color:#333f4c;
+}
